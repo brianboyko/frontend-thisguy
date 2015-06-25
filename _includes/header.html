@@ -1,9 +1,10 @@
+<script src="{{site.url}}/js/social.js"></script>
 <header class="site-header">
 
   <div class="wrapper">
 
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
 
+{% include social.html %}
     <nav class="site-nav">
       <a href="#" class="menu-icon">
         <svg viewBox="0 0 18 15">
@@ -14,11 +15,13 @@
       </a>
 
       <div class="trigger">
-        {% for page in site.pages %}
-          {% if page.title %}
-          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-          {% endif %}
-        {% endfor %}
+        <a class="page-link" href="{{ site.baseurl }}/">Home</a>
+          <a class="page-link" href="{{ site.baseurl }}/about.html">About</a>
+          <a class="page-link" href="{{ site.baseurl }}/blog.html">Blog &amp; Updates</a>
+                    <a class="page-link" href="{{ site.baseurl }}/details.html">Details</a>
+          <a class="donate-link" href="{{ site.baseurl }}/donate.html">Donate</a>
+
+
       </div>
     </nav>
 

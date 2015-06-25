@@ -1,23 +1,115 @@
 ---
 layout: default
+title: Home
+omit_title_suffix: true
+cssid: home
+nav_order: 0
+stylesheet: homepage.css
 ---
 
-<div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+{% capture widget %}
+Click this very obvious DONATE button to DONATE. df
+{% endcapture %}
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+{% capture splash_title %}
+SEND&nbsp;THIS&nbsp;GUY TO&nbsp;CODE&nbsp;CAMP
+{% endcapture %}
 
-</div>
+{% capture splash_subtitle %}
+and he'll pay it forward
+{% endcapture %}
+
+
+{% capture section1 %}
+As an *amateur* web developer, Brian Boyko created the [first version](http://brianboyko.github.io/oldMayday/) of the [Mayday.US](http://mayday.us) site, which helped [Lawrence Lessig](http://lessig.tumblr.com/) raise $11M to fight systemic corruption. 
+
+**He'd like to continue the fight by going pro.**
+{% endcapture %}
+
+{% capture costbox %}
+## **Schools and Tuition**
+
+## In Austin
+ * Iron Yard: $12,000
+ * General Assembly: $11,500
+ * MakerSquare: $16,920
+
+## In San Francisco
+ * Dev Bootcamp: $13,950
+ * HackReactor: $17,780
+ * AppAcademy: $5,000 deposit/18% year 1.<sup>1</sup>
+
+## In New York City
+* Flatiron School: $12,000
+* Fullstack Academy: $15,680
+
+ <sup>1</sup>graduates must pay 18% of their first year's salary to AppAcademy.
+  
+{% endcapture %}
+
+
+{% capture section2 %}
+## **The Plan**
+
+To get up to date with the latest technologies, make developer contacts, and build a portfolio of projects, Brian plans on attending one of the various programming "boot-camps." These programs offer intensive instruction in the latest Web technologies over an accelerated time period.  
+
+In order to afford the tuition for one of these camps, Brian has started this campaign. 
+
+But it's not just about him.  
+{% endcapture %}
+
+
+{% capture section3 %}
+
+## **The Promise**
+
+After completing the course and landing his first development job, Brian will start a nonprofit coding student scholarship, starting it off with 18% of his first year's salary, or 105% of the money raised and spent, whichever is larger - paying it forward to the next person. This isn't just helping Brian - it can potentially help hundreds.   
+
+Additionally, he will donate at least **100 development hours pro-bono** to non-profit organizations working on reforming our broken campaign finance system in the United States. 
+
+{% endcapture %}
+
+{% capture promisebox %}
+## Brian will give at least
+
+# **100 Hours**
+
+## pro-bono development time 
+
+to nonprofits fighting for reform
+
+---
+
+## Brian will give at least
+
+# **105%**
+
+## of the funds raised and spent
+
+to pay the favor forward.
+
+{% endcapture %}
+
+{% capture conclusion %}
+
+---
+
+For more details, check out the [blog]({{site.url}}/blog.html), or read the [details](/details.html) page.
+
+To see what Brian has done so far check out his [project page](/projects.html).    
+
+---
+
+&nbsp;
+
+*I understand that I'm asking a lot of my friends, family, and strangers on the Internet. But I wouldn't be doing it if I didn't think that this was the best risk to take right now. All I know is that being a developer would allow me to help a lot of people while doing something I love.*
+
+## So, please, if you can: 
+
+{% endcapture %}
+
+
+{% include homepage.html %}

@@ -7,8 +7,10 @@
     <div class="footer-col-wrapper">
       <div class="footer-col  footer-col-1">
         <ul class="contact-list">
-          <li>{{ site.title }}</li>
+          <li>{{ site.title }} is run by Brian Boyko.</li>
           <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+          <li>{% include facebook.html %}</li>
+          <li>{% include twitter.html %}</li>
         </ul>
       </div>
 
@@ -51,5 +53,7 @@
     </div>
 
   </div>
-
+{% include google.html %}
 </footer>
+
+
