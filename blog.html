@@ -1,0 +1,28 @@
+---
+layout: page
+title: Blog &amp; Updates
+omit_title_suffix: true
+cssid: blog
+nav_order: 0
+stylesheet: page.css
+---
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%b %-d, %Y" }} 
+  {% endfor %}
+</ul>
+
+<HR>
+<p>&nbsp;</p>
+  {% for post in site.posts limit:5 %}
+      <H2><strong><a href="{{ post.url }}">{{ post.title }}</a></strong></H2>
+      <em>{{ post.date | date: "%b %-d, %Y" }}</em>
+    
+      {{post.content | replace:'<img src="', '<img style="max-height:100px; max-width:200px;" src="' | truncatewords: 60}}<BR><a href="{{ post.url }}">Read More...</a>
+      <HR>
+      <p>&nbsp;</p>
+
+  {% endfor %}
+
+

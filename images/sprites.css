@@ -1,0 +1,91 @@
+.facebook-sprite {
+	background: url('{{site.url}}/images/social-sprites.png') no-repeat 0 -64px;
+	width: 64px;
+	height: 64px;
+}
+
+.facebook-sprite:hover {
+	background: url('{{site.url}}/images/social-sprites.png') no-repeat 0px 0;
+	width: 64px;
+	height: 64px;
+}
+
+.twitter-sprite {
+	background: url('{{site.url}}/images/social-sprites.png') no-repeat -64px -64px;
+	width: 64px;
+	height: 64px;
+}
+
+.twitter-sprite:hover {
+	background: url('{{site.url}}/images/social-sprites.png') no-repeat -64px 0;
+	width: 64px;
+	height: 64px;
+}
+
+.gplus-sprite {
+	background: url('{{site.url}}/images/social-sprites.png') no-repeat -128px -64px;
+	width: 64px;
+	height: 64px;
+}
+
+.gplus-sprite:hover {
+	background: url('{{site.url}}/images/social-sprites.png') no-repeat -128px 0;
+	width: 64px;
+	height: 64px;
+}
+
+.reddit-sprite {
+	background: url('{{site.url}}/images/social-sprites.png') no-repeat -192px -64px;
+	width: 64px;
+	height: 64px;
+}
+
+.reddit-sprite:hover {
+	background: url('{{site.url}}/images/social-sprites.png') no-repeat -192px 0;
+	width: 64px;
+	height: 64px;
+}
+.linkedin-sprite {
+	background: url('{{site.url}}/images/social-sprites.png') no-repeat -256px -64px;
+	width: 64px;
+	height: 64px;
+}
+
+.linkedin-sprite:hover {
+	background: url('{{site.url}}/images/social-sprites.png') no-repeat -256px 0;
+	width: 64px;
+	height: 64px;
+}
+.tumblr-sprite {
+	background: url('{{site.url}}/images/social-sprites.png') no-repeat -320px -64px;
+	width: 64px;
+	height: 64px;
+}
+
+.tumblr-sprite:hover {
+	background: url('{{site.url}}/images/social-sprites.png') no-repeat -320px 0;
+	width: 64px;
+	height: 64px;
+}
+.rss-sprite {
+	background: url('{{site.url}}/images/social-sprites.png') no-repeat -384px -64px;
+	width: 64px;
+	height: 64px;
+}
+
+.rss-sprite:hover {
+	background: url('{{site.url}}/images/social-sprites.png') no-repeat -384px 0;
+	width: 64px;
+	height: 64px;
+}
+.email-sprite {
+	background: url('{{site.url}}/images/social-sprites.png') no-repeat -448px -64px;
+	width: 64px;
+	height: 64px;
+}
+
+.email-sprite:hover {
+	background: url('{{site.url}}/images/social-sprites.png') no-repeat -448px 0;
+	width: 64px;
+	height: 64px;
+}

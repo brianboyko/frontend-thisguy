@@ -1,0 +1,75 @@
+---
+layout: page
+title: Donate to Send This Guy To Code Camp
+omit_title_suffix: true
+cssid: home
+nav_order: 0
+stylesheet: donation.css
+---
+
+
+
+      <link href="{{site.url}}/css/bootstrap.css" rel="stylesheet">
+    <div class="container">
+      <div class="starter-template">
+        <!-- noscript warning -->
+        <noscript>
+          <div class="alert alert-block">
+            You'll need JavaScript enabled to donate with Stripe.
+          </div>
+        </noscript>
+<P><UL><LI>This form is not yet live. Because I've yet to move hosting off of Github Pages to Heroku, I cannot have SSL installed.  That leaves credit cards vulnerable to Man In The Middle Attacks. </LI>
+<LI> For now, use only the test card "4242 4242 4242 4242" with any expiration date and any CVV code to test the form. </LI></UL></P>
+        <!-- Input form and button -->
+        <p><form class="form-inline">
+
+      <!--
+        <button id="donate10" class="moneybutton" onclick="getElementById('monies').value = 10" type="button">$10</button>
+        <button id="donate25" class="moneybutton" onclick="getElementById('monies').value = 25" type="button">$25</button>
+        <button id="donate50" class="moneybutton" onclick="getElementById('monies').value = 50" type="button">$50</button>
+        <button id="donate100" class="moneybutton" onclick="getElementById('monies').value = 100" type="button">$100</button>
+        <button id="donate250" class="moneybutton" onclick="getElementById('monies').value = 250" type="button">$250</button>
+        <button id="donate500" class="moneybutton" onclick="getElementById('monies').value = 500" type="button">$500</button>
+        <button id="donate1000" class="moneybutton" onclick="getElementById('monies').value = 1000" type="button">$1000</button>
+        <button id="donate2500" class="moneybutton" onclick="getElementById('monies').value = 2500" type="button">$2500</button>
+        <button id="donate5000" class="hide-on-mbl moneybutton" onclick="getElementById('monies').value = 5000" type="button">$5000</button>
+      -->
+
+        <button id="donate10" class="moneybutton" type="button">$10</button>
+        <button id="donate25" class="moneybutton" type="button">$25</button>
+        <button id="donate50" class="moneybutton" type="button">$50</button>
+        <button id="donate100" class="moneybutton" type="button">$100</button>
+        <button id="donate250" class="moneybutton" type="button">$250</button>
+        <button id="donate500" class="moneybutton" type="button">$500</button>
+        <button id="donate1000" class="moneybutton" type="button">$1000</button>
+        <button id="donate2500" class="moneybutton" type="button">$2500</button>
+        <button id="donate5000" class="hide-on-mbl moneybutton" type="button">$5000</button>
+
+
+            <div id="custom-container">Or enter a custom amount:<BR>
+            $ <input id="monies" type="number" pattern="\d*" min="0.5" step="any"
+                     class="input-large" placeholder="Amount in USD (e.g. 25.32)"></div>
+                     <BR>
+            <button id="paybtn" class="checkout-btn" type="button"><span>Checkout Your Donation</span></button>
+          </form></p>
+
+        <!-- Donation status window -->
+        <div id="payment_status" class="alert alert-block fade">
+          <button id="pay_status_close_btn" href="#"
+                  type="button" class="close">&times;</button>
+          <span id="status_message">Enter an amount above.</span>
+        </div>
+      </div>
+
+    </div><!-- /.container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="https://checkout.stripe.com/checkout.js"></script>
+    <script src="https://thisguy-donation.herokuapp.com/pubkey.js"></script>
+    <script src="{{site.url}}/js/donate.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!--<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->

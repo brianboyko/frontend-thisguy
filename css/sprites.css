@@ -1,0 +1,201 @@
+/* Hang from Hover.css */
+@-webkit-keyframes hvr-hang {
+  0% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+
+  50% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+}
+
+@keyframes hvr-hang {
+  0% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+
+  50% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+}
+
+@-webkit-keyframes hvr-hang-sink {
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+}
+
+@keyframes hvr-hang-sink {
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+}
+
+.hvr-hang {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+}
+.hvr-hang:hover, .hvr-hang:focus, .hvr-hang:active {
+  -webkit-animation-name: hvr-hang-sink, hvr-hang;
+  animation-name: hvr-hang-sink, hvr-hang;
+  -webkit-animation-duration: .3s, 1.5s;
+  animation-duration: .3s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
+}
+
+.socialcontainer{
+	width:512px;
+	max-height:64px;
+	text-align:center;
+float:left;
+}
+
+.facebook-sprite {
+	background: url('../images/social-spritesv2.png') no-repeat 0 -64px;
+	width: 64px;
+	height: 64px;
+	float:left;
+}
+
+.facebook-sprite:hover {
+	background: url('../images/social-spritesv2.png') no-repeat 0px 0;
+	width: 64px;
+	height: 64px;
+		float:left;
+}
+
+.twitter-sprite {
+	background: url('../images/social-spritesv2.png') no-repeat -64px -64px;
+	width: 64px;
+	height: 64px;
+	float:left;
+}
+
+.twitter-sprite:hover {
+	background: url('../images/social-spritesv2.png') no-repeat -64px 0;
+	width: 64px;
+	height: 64px;
+		float:left;
+}
+
+.gplus-sprite {
+	background: url('../images/social-spritesv2.png') no-repeat -128px -64px;
+	width: 64px;
+	height: 64px;
+	float:left;
+}
+
+.gplus-sprite:hover {
+	background: url('../images/social-spritesv2.png') no-repeat -128px 0;
+	width: 64px;
+	height: 64px;
+		float:left;
+}
+
+.reddit-sprite {
+	background: url('../images/social-spritesv2.png') no-repeat -192px -64px;
+	width: 64px;
+	height: 64px;
+	float:left;
+}
+
+.reddit-sprite:hover {
+	background: url('../images/social-spritesv2.png') no-repeat -192px 0;
+	width: 64px;
+	height: 64px;
+	float:left;
+}
+.linkedin-sprite {
+	background: url('../images/social-spritesv2.png') no-repeat -256px -64px;
+	width: 64px;
+	height: 64px;
+		float:left;
+}
+
+.linkedin-sprite:hover {
+	background: url('../images/social-spritesv2.png') no-repeat -256px 0;
+	width: 64px;
+	height: 64px;
+	float:left;
+}
+.tumblr-sprite {
+	background: url('../images/social-spritesv2.png') no-repeat -320px -64px;
+	width: 64px;
+	height: 64px;
+	float:left;
+}
+
+.tumblr-sprite:hover {
+	background: url('../images/social-spritesv2.png') no-repeat -320px 0;
+	width: 64px;
+	height: 64px;
+	float:left;
+}
+.rss-sprite {
+	background: url('../images/social-spritesv2.png') no-repeat -384px -64px;
+	width: 64px;
+	height: 64px;
+	float:left;
+}
+
+.rss-sprite:hover {
+	background: url('../images/social-spritesv2.png') no-repeat -384px 0;
+	width: 64px;
+	height: 64px;
+}
+.email-sprite {
+	background: url('../images/social-spritesv2.png') no-repeat -448px -64px;
+	width: 64px;
+	height: 64px;
+	float:left;
+}
+
+.email-sprite:hover {
+	background: url('../images/social-spritesv2.png') no-repeat -448px 0;
+	width: 64px;
+	height: 64px;
+		float:left;
+}
+
+
+@media screen and (max-width: 600px) {
+	.socialcontainer{
+		width:256px;
+		max-height:140px;
+		text-align:center;
+	}
+
+
+}
+

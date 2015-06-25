@@ -1,0 +1,37 @@
+<div class="mobile-splashtitle">{{ splash_title }}</div><BR />
+<div class="mobile-splashsubtitle">{{ splash_subtitle }}</div>
+
+
+<div class="boykopicture">
+	<div class="headerholder">
+		<div class="splashtitle">{{ splash_title }}</div>
+		<div class="splashsubtitle">{{ splash_subtitle }}</div>
+		<form method="get" action="{{site.url}}{{site.baseurl}}/donate.html"><button class="widget" href="{{site.url}}{{site.baseurl}}/donate.html">Click Here to Donate</button></form>
+		      	</div>
+</div>
+{% include progress.html %}
+		<HR />
+	<div style="clear: both;"></div>
+<div class="section-1">{{ section1 | markdownify }}</div>
+<HR />
+
+
+<div style="clear: both;"></div>
+<div class="parent-section">
+<div class="section-2">{{ section2 | markdownify }}</div>
+<div class="detail-2">{{ promisebox | markdownify }}</div>
+<div style="clear: both;"></div>
+<HR />
+<div class="parent-section">
+<div class="detail-3">{{ costbox | markdownify }}</div><div class="col-2-3 section-3">{{ section3 | markdownify }}</div><span class="hidemobile"><HR /></span>
+</div>
+
+
+
+<div style="clear: both;"></div>
+
+<div class="section-4">{{ conclusion | markdownify }}</div>
+<form method="get" action="{{site.url}}{{site.baseurl}}/donate.html"><button class="widget_bottom" href="{{site.url}}{{site.baseurl}}/donate.html">Donate</button></form>
+
+
+<div style="clear: both;">&nbsp;</div>
