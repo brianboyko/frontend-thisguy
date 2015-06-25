@@ -1,0 +1,26 @@
+---
+layout: post
+title:  IT'S ALIVE!!!
+date:   2015-06-20 00:39:00 
+categories: responsive-design
+stylesheet: page.css
+author: Brian Boyko
+---
+
+Okay, I can't say that I *understand* quite how I got it working. But I did. 
+
+So, here's what happened, I found this self-hosted service called [heroku-stripe-checkout](https://github.com/christophercliff/heroku-stripe-checkout) by [Christopher Cliff](https://json.expert/a-free-self-hosted-backend-for-stripe-checkout/). 
+
+I was able to one-button deploy it to Heroku, and using that server to process the payments, the test payment went through as a success.  I'm not done - not by a long shot - but that's the really hard part.  And it's done. 
+
+Right now, it's only set up to accept test payments.  And it doesn't have auto-email confirmation. And it only works with $20. This is all something I can fix soon enough. 
+
+Most importantly, I registered the domain for this site. "SendThisGuyToCodeCamp.com"
+
+Catchy. 
+
+   "Hey, Carl, what's the address for that site about sending that guy to code camp? 
+
+   "Send this guy to code camp?"
+
+   "Yeah, thanks Carl!"
