@@ -5,7 +5,7 @@ description: > # this means to ignore newlines until "baseurl:"
   The crowdfunding campaign for Brian to head to coding bootcamp to become a professional coder,
   fight against institutional corruption, and eventually pay the favor forward to the next generation.   
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://frontend-thisguy.herokuapp.com" # the base hostname & protocol for your site
+url: "http://www.sendthisguytocodecamp.com" # the base hostname & protocol for your site
 twitter_username: boyko4tx
 github_username:  brianboyko
 
