@@ -18,3 +18,7 @@ So yeah, why re-invent the wheel?
 If I do this right, I'll be able to push my code both to my live site and the GitHub repository at the same time. 
 
 If I do it wrong, well, you won't be reading this message. 
+
+---
+
+Hmm, looks like I was able to get Heroku working after all.  Alright, now to send the domain to the frontend app.  It also means that I have to start paying for servers.  But... after all is said and done... it should mean, finally, that I can go live. Ish. 
