@@ -217,7 +217,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fa6f3c', end
 }
 
 .hide-on-mbl {
-	display:none;
+	display:none !important;
 }
 
 #monies{
