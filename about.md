@@ -12,13 +12,13 @@ stylesheet: page.css
 * Will be replaced with the ToC, excluding the "Contents" header
 {:toc}
 
-## Who Is This Brian Guy Anyway?  
+## Who Is This Brian Guy Anyway? 
 
 ![Brian's family]({{site.baseurl}}/images/boykofamily.jpg)
 
 (He's the one on the right.) 
 
-<span style="font-size:150%;">**My name is Brian Boyko. I’m hoping I can count on you to help me become a better programmer - and a better person.**</span>  
+<span style="font-size:150%;">**My name is Brian Boyko. I’m hoping I can count on you to help me become a better programmer - and a better person.**</span> 
 
 > "Nobody has ever figured out a new way of doing things by doing things the way that everyone else was doing them... There are always people who try and look at it from a different angle... Inevitably the people who are asking different questions are at the forefront of innovation in every field." 
 > <BR> - [Adam Savage, in Brian's first documentary, Makers, 2007.](https://vimeo.com/766987)
@@ -31,7 +31,7 @@ In school, I focused on the impact that the Internet was having on journalism an
 
 
 
-But as the years have gone by, I've become, in some ways, a victim of my success. The Web of 2015 is very different from the web of 2005; and while I have a lot of skill and experience as a writer, content creation has become commoditized. It's time to change careers.  
+But as the years have gone by, I've become, in some ways, a victim of my success. The Web of 2015 is very different from the web of 2005; and while I have a lot of skill and experience as a writer, content creation has become commoditized. It's time to change careers. 
 
 ---
 
@@ -39,9 +39,9 @@ But as the years have gone by, I've become, in some ways, a victim of my success
 
 I’d like to become a full-time software developer, and in order to do this, I’d like to attend a coding bootcamp. It is not that I couldn't teach myself programming on my own - I could, given a year. 
 
-The problem is that since I'm switching careers, I need to know the latest professional tools and make the contacts I need to get started as a junior developers. It's not just the knowledge - it's the jump-start to the career that these schools can bring.  
+The problem is that since I'm switching careers, I need to know the latest professional tools and make the contacts I need to get started as a junior developers. It's not just the knowledge - it's the jump-start to the career that these schools can bring. 
 
-And one of the reasons I’d like to become a developer is so that I can continue something I’ve already started: fighting against institutional corruption in Congress with Mayday.US, the New Hampshire Rebellion, the Rootstrikers and other pro-reform groups.  
+And one of the reasons I’d like to become a developer is so that I can continue something I’ve already started: fighting against institutional corruption in Congress with Mayday.US, the New Hampshire Rebellion, the Rootstrikers and other pro-reform groups. 
 
 ---
 
@@ -65,32 +65,32 @@ Within the [first 24 hours we had raised over $250,000 dollars](http://lessig.tu
 
 ## The Great Server Meltdown
 
-I built Mayday to handle a general load - maybe 50 simultanious users at a time. But far more had come those first two days. At first the site slowed, then it stopped completely. 
+I built Mayday to handle a general load - maybe 50 simultaneous users at a time. But far more had come those first two days. At first the site slowed, then it stopped completely. 
 
 This triggered a massive spike in blood pressure combined with a panic attack. 
 
-I put out a cry for help on Twitter. In response, a handful of developers - real developers - [gathered on Freenode and game to the rescue](http://lessig.tumblr.com/post/84554820472/update-on-mayone-us-tech), designing a solution for the site that would scale.  Among them were Hunter Freyer, Corey Farwell, David Harrison, J.T. Olds, Brad Pitcher, Jeremy White, and my friend, Aaron Lifshin, who quickly took over the role of "CTO". 
+I put out a cry for help on Twitter. In response, a handful of developers - real developers - [gathered on Freenode and game to the rescue](http://lessig.tumblr.com/post/84554820472/update-on-mayone-us-tech), designing a solution for the site that would scale. Among them were Hunter Freyer, Corey Farwell, David Harrison, J.T. Olds, Brad Pitcher, Jeremy White, and my friend, Aaron Lifshin, who quickly took over the role of "CTO". 
 
 > "We have been in a chatroom full of geeks pretty much nonstop since Friday morning with minimal breaks for sleep and food. This is beginning to tell."" 
 > -- Aaron Lifshin, Mayday CTO
 
-What they built - based on technologies such as Google App Engine, Python, Jekyll, GitHub, and other technologies, was nothing short of amazing. Not only were we able to get up and running, but thanks to the development team, we were able to integrate PayPal and Bitcoin. I helped where I could with the integration, but they were just light years beyond me.  So I fell back into the role that I was comfortable with: social media marketing. Still, there were many times I felt that "if I just knew how to do *this*", or *that*, it would make all the difference.  
+What they built - based on technologies such as Google App Engine, Python, Jekyll, GitHub, and other technologies, was nothing short of amazing. Not only were we able to get up and running, but thanks to the development team, we were able to integrate PayPal and Bitcoin. I helped where I could with the integration, but they were just light years beyond me. So I fell back into the role that I was comfortable with: social media marketing. Still, there were many times I felt that "if I just knew how to do *this*", or *that*, it would make all the difference. 
 
-<span style="font-size:150%;">Eventually, Mayday PAC raised it's final $5M contingent fundraising goal, with only nine hours to spare. </span>
+<span style="font-size:150%;">Eventually, Mayday PAC raised its final $5M contingent fundraising goal, with only nine hours to spare. </span>
 
 ---
 
 ## The Future
 
-I’ve thought a lot over the past year about how I can best help the cause to end this system of corruption in Washington. And while I’ve done some good as a writer and marketer, I know firsthand the value of having the technological expertise to build the tools which allow us to bypass the big-money obstacles, reach people on a personal level, arm them with information, and organize them effectively to fight against corruption.  
+I’ve thought a lot over the past year about how I can best help the cause to end this system of corruption in Washington. And while I’ve done some good as a writer and marketer, I know firsthand the value of having the technological expertise to build the tools which allow us to bypass the big-money obstacles, reach people on a personal level, arm them with information, and organize them effectively to fight against corruption. 
 
 <span style="font-size:150%;">Since the Mayday PAC was a success, I thought about crowdfunding my tuition to coding bootcamp. I know that I'm effectively asking for charity. But I believe that charity that helps you get on your feet needs to be paid forward. And that's what I intend to do. </span>
 
-First, I'm going to spend at least 100 hours over the next year working pro-bono for reform campaigns like Mayday.  I'd probably have ended up doing that anyway, but armed with the knowledge I'll get from code school, I'll be using those hours much more effectively and get more done.  
+First, I'm going to spend at least 100 hours over the next year working pro-bono for reform campaigns like Mayday. I'd probably have ended up doing that anyway, but armed with the knowledge I'll get from code school, I'll be using those hours much more effectively and get more done. 
 
-Second, I'm going to pay the money forward. I can't possibly pay all of my donors back - the logistics of it would be too complicated. But what I can do is use part of my first year's salary as a developer to pay the favor forward.  So I'll set aside 18% of my salary - or at least 105% of what I've raised and spent - whichever is larger, to give someone else the oppertunity that my crowdfunded backers would be giving me.
+Second, I'm going to pay the money forward. I can't possibly pay all of my donors back - the logistics of it would be too complicated. But what I can do is use part of my first year's salary as a developer to pay the favor forward. So I'll set aside 18% of my salary - or at least 105% of what I've raised and spent - whichever is larger, to give someone else the opportunity that my crowdfunding backers would be giving me.
 
-And, presumably, they would also do the same - passing their skills onto another generation of reform activists who want to learn to code.  
+And, presumably, they would also do the same - passing their skills onto another generation of reform activists who want to learn to code. 
 
-<span style="font-size:150%;">I don’t know if this campaign will be a success, but if it is, we could possibly start a chain reaction that would give many students who are not able to afford tuition on their own a chance to reach their full potential, and build an army of developers working for the cause of reform.  </span>
+<span style="font-size:150%;">I don’t know if this campaign will be a success, but if it is, we could possibly start a chain reaction that would give many students who are not able to afford tuition on their own a chance to reach their full potential, and build an army of developers working for the cause of reform. </span>
 

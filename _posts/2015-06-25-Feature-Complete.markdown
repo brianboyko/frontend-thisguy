@@ -2,7 +2,7 @@
 layout: post
 title:  Feature Complete
 date:   2015-06-25 05:31:25
-categories: Heroku Github Pass
+categories: SSL Heroku
 stylesheet: page.css
 author: Brian Boyko
 ---

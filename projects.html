@@ -35,11 +35,11 @@ stylesheet: projects.css
 
 ![Project-Thisguy](images/project_thisguy.png)
 
-This site was a conglomeration of a number of different technologies. First, there's the look and feel of the site itself.  It uses Jekyll as an HTML preprocessor, which allows me to focus on content without having to repeat myself constently. Originally, this was hosted on GitHub Pages during development, but eventually the site's front end and back-end were moved to Heroku in order to enable SSL processing of credit cards. 
+This site was a conglomeration of a number of different technologies. First, there's the look and feel of the site itself.  It uses Jekyll as an HTML preprocessor, which allows me to focus on content without having to repeat myself constantly. Originally, this was hosted on GitHub Pages during development, but eventually the site's front end and back-end were moved to Heroku in order to enable SSL processing of credit cards. 
 
-Credit card payments are handled by Stripe, which required some doing.  While Stripe makes things relatively simple on the front end, in order to create buttons varying the amount charged, I needed to run a Ruby-based application on the backend.  A bit of Javascript on the front end allowed me to create the buttons with dollar amounts (primarily for the convienience of mobile users). 
+Credit card payments are handled by Stripe, which required some doing.  While Stripe makes things relatively simple on the front end, in order to create buttons varying the amount charged, I needed to run a Ruby-based application on the backend.  A bit of Javascript on the front end allowed me to create the buttons with dollar amounts (primarily for the convenience of mobile users). 
 
-One feature that was quite a puzzler was getting the progress bar working correctly.  In order to do this, I would have to store the amount and number of users somewhere - eventually, I ran a PostgresSQL database on the same server as the backend payment processing, whicvh stores *only* e-mail addresses and amounts. (This was done by inserting some code that reaches the database using the 'pg' ruby gem.)  Each time the amount changes (i.e., whenever a payment is processed) the site also generates a .json file that the back-end server serves via Sinatra, which the front-end then takes and runs with to get the correct amount for the progress bar.  It's a bit of a kludge - I'd rather grab the data directly via the database, but this way no one with access to the front-end code has access to the sensitive back-end data.  
+One feature that was quite a puzzler was getting the progress bar working correctly.  In order to do this, I would have to store the amount and number of users somewhere - eventually, I ran a PostgresSQL database on the same server as the backend payment processing, which stores *only* e-mail addresses and amounts. (This was done by inserting some code that reaches the database using the 'pg' ruby gem.)  Each time the amount changes (i.e., whenever a payment is processed) the site also generates a .json file that the back-end server serves via Sinatra, which the front-end then takes and runs with to get the correct amount for the progress bar.  It's a bit of a kludge - I'd rather grab the data directly via the database, but this way no one with access to the front-end code has access to the sensitive back-end data.  
 
 Other things were just simple HTML and CSS, such as the floating social media icons you see in the upper right hand corner - for that I just used the pregenerated CSS animations on the hover.css project. 
 
@@ -58,7 +58,7 @@ Other things were just simple HTML and CSS, such as the floating social media ic
 
 ## Shuffler
 
-#### **Goal:** Create web-based pojer probabilities calculator
+#### **Goal:** Create web-based poker probabilities calculator
 
 #### *Technologies used: Javascript*
 
