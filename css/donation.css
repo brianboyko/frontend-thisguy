@@ -217,7 +217,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fa6f3c', end
 }
 
 .hide-on-mbl {
-	display:none !important;
+	display:none;
 }
 
 #monies{
@@ -246,7 +246,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fa6f3c', end
 
 /* HOVER.CSS Border Fade */
 .hvr-border-fade {
-  display: inline-block;
+  /*display: inline-block;*/
   vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
