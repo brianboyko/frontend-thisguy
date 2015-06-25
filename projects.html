@@ -1,0 +1,160 @@
+---
+layout: page
+title: Projects
+omit_title_suffix: true
+cssid: home
+nav_order: 0
+stylesheet: projects.css
+---
+
+{% capture toc %}
+* Code
+  * [SendThisGuyToCodeCamp.com](#p1)
+  * [Shuffler](#p2)
+  * [Mayday PAC](#p3)
+
+* Video
+  * [Steve Wozniak for Mayday.US](#v1)
+  * [Windows 8, the Animated Evaluation](#v2)
+  * [Data Caps, the Animated Evaluation](#v3)
+  * [What Really Happens in the CEO's Ops Meeting](#v4)
+  * [Drupalcon Austin, 2014](#v5)
+
+{% endcapture %}
+
+
+{% capture project1 %}
+
+## SendThisGuyToCodeCamp.com
+
+#### **Goal:** Create complete crowdfunding site with payment processing and progress tracking.
+
+#### *Technologies used: Heroku, Git, GitHub, HTML, CSS, Sass, Jekyll, Javascript, Ruby, PostgreSQL, Stripe*
+
+---
+
+![Project-Thisguy](images/project_thisguy.png)
+
+This site was a conglomeration of a number of different technologies. First, there's the look and feel of the site itself.  It uses Jekyll as an HTML preprocessor, which allows me to focus on content without having to repeat myself constently. Originally, this was hosted on GitHub Pages during development, but eventually the site's front end and back-end were moved to Heroku in order to enable SSL processing of credit cards. 
+
+Credit card payments are handled by Stripe, which required some doing.  While Stripe makes things relatively simple on the front end, in order to create buttons varying the amount charged, I needed to run a Ruby-based application on the backend.  A bit of Javascript on the front end allowed me to create the buttons with dollar amounts (primarily for the convienience of mobile users). 
+
+One feature that was quite a puzzler was getting the progress bar working correctly.  In order to do this, I would have to store the amount and number of users somewhere - eventually, I ran a PostgresSQL database on the same server as the backend payment processing, whicvh stores *only* e-mail addresses and amounts. (This was done by inserting some code that reaches the database using the 'pg' ruby gem.)  Each time the amount changes (i.e., whenever a payment is processed) the site also generates a .json file that the back-end server serves via Sinatra, which the front-end then takes and runs with to get the correct amount for the progress bar.  It's a bit of a kludge - I'd rather grab the data directly via the database, but this way no one with access to the front-end code has access to the sensitive back-end data.  
+
+Other things were just simple HTML and CSS, such as the floating social media icons you see in the upper right hand corner - for that I just used the pregenerated CSS animations on the hover.css project. 
+
+* Serve a good looking (or good-enough looking) front-end for a "crowdfunding site"
+* Integrate with Stripe and take payments
+* Save (only) e-mail addresses and amount raised in a PostgreSQL database
+* Generate a JSON file which can be read by the site to create an up-to-the-second accurate progress bar.
+* Add features for additional pages and blogs
+* Code with the Jekyll HTML preprocessor, CSS, and Sass.  
+
+{% endcapture %}
+
+
+
+{% capture project2 %}
+
+## Shuffler
+
+#### **Goal:** Create web-based pojer probabilities calculator
+
+#### *Technologies used: Javascript*
+
+---
+
+![Shuffler](images/shuffler.png)
+
+This is my first programming project since starting on my path as developer, and one which is primarily "programming-focused" rather than "web focused." It is incomplete, and in-progress. 
+
+The goal is to eventually replicate as a web-based application the functionality of PokerStove, an app for Windows that can tell you the probability of your hand against your opponent's multiple possible holdings. 
+
+As it currently stands, it is feature incomplete, although I have learned quite a bit about object-oriented programming and the capabilities of vanilla Javascript in the browser.  Currently, it can:
+
+* Create a deck - an array of 52 "card" objects with properties of "rank" and "suit"
+* Shuffle that deck into a (pseudo)random order. 
+* Parse individual cards by name.
+* Grab a five card poker hand. 
+* Take a string input and convert that into a poker hand.
+* Evaluate the ranking of a poker hand. 
+* Compare two hands and see what beats what. 
+* Find the best possible 5 card poker hand out of a seven-card spread.
+* Compare two holdem hands, deal a random board, and determine a winner. 
+
+Naturally, I have a long way to go and I put it on hold for other things, but eventually, I hope to have the program feature complete.  
+
+You can view the code at [Github](https://github.com/brianboyko/shuffler).
+
+{% endcapture %}
+
+
+
+
+{% capture project3 %}
+
+## Mayone.US/Mayday.US
+
+#### **Goal:** Raise $6M. 
+
+#### *Technologies used: Git, GitHub, HTML, CSS, Jekyll, Javascript, WordPress, Google App Engine, Stripe*
+
+---
+
+![Mayday PAC](images/mayday.png)
+
+More details of this story can be found on the About Page, but the first version of this site was built on WordPress, and used Stripe for payment processing. This site, I build alone. 
+
+Eventually, with a team of more experienced developers at the helm, the site was moved to a GitHub Pages based front-end and a Google App Engine backend for payments. Wordpress was ditched for static sites using Jekyll to solve the load problem we had from day one.  
+
+{% endcapture %}
+
+
+
+{% capture video1 %}
+
+<H2>Steve Wozniak for Mayday.US</H2>
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/ZoZ-tJiwBvc" frameborder="0" allowfullscreen></iframe>
+
+{% endcapture %}
+
+
+{% capture video2 %}
+
+<H2>Windows 8, the Animated Evaluation</H2>
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/WTYet-qf1jo" frameborder="0" allowfullscreen></iframe>
+
+<P>This video got over 600,000 views on YouTube</P>
+
+{% endcapture %}
+
+{% capture video3 %}
+
+<H2>Data Caps, the Animated Evaluation</H2>
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/uyuIiG4c4Go" frameborder="0" allowfullscreen></iframe>
+
+<P>The follow-up to the Windows 8 video didn't fare quite as well, but still got a respectable 116,000 views</P>
+
+{% endcapture %}
+
+{% capture video4 %}
+
+<H2>What Really Happens in the CEO's Ops Meeting</H2>
+
+<iframe src="https://player.vimeo.com/video/126830383" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<P>For one of my marketing clients, Khorus</P>
+
+{% endcapture %}
+
+{% capture video5 %}
+
+<H2>DrupalCon 2014 Announcement</H2>
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/9biByvSE_D4" frameborder="0" allowfullscreen></iframe>
+
+{% endcapture %}
+
+{% include projects.html %}

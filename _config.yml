@@ -11,10 +11,6 @@ github_username:  brianboyko
 
 # Build settings
 markdown: kramdown
-
-
-# Build settings
-markdown: kramdown
 exclude:
  - unicorn.rb
  - README.md
