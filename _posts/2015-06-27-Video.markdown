@@ -1,0 +1,28 @@
+---
+layout: post
+title:  Video's Up
+date:   2015-06-27 10:51:25
+categories: YouTube Video
+stylesheet: page.css
+author: Brian Boyko
+---
+
+Almost ready - I've [added the video pitch](https://www.youtube.com/watch?v=uxlyQEVB5EM) to the front page.  This was recorded with the support of [Epoch Coffee in Austin](https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=epoch%20coffee), which is where I coded about 99% of this site.  For some reason I just find it really easy to work and get stuff done there. Plus, the North Loop location is open 24 hours - great for when you get on a coding rush and just can't-stop-won't-stop. 
+
+The animation is very basic, mostly using [PowToon](http://www.powtoon.com/), but I think it gets the point across.  
+
+I am having a little bit of trouble with the backend - I think I might have to write a small script to keep the progress bar alive -- not sure. Right now there's a bug - it returns 'nil' if it's been too long since the last donation.  Hmm... how to take on that one?
+
+---
+
+In personal news, I know that [I've tread this ground before](https://www.youtube.com/watch?v=WTYet-qf1jo), but good goddamn, Windows 8 is annoying, and it never fails to find new ways to dissapoint me.  
+
+I've got a newer laptop, less than a year old, and it came with Windows 8.  By all rights, it should be blazing fast. Instead, everything seems to be slowing to a crawl. And I'm not talking about complex applications, I'm talking about basic filesystem functions, like opening up a new explorer window, or renaming a file.  It takes forever.  I don't know if this is Windows 8 for sure, but my older computer with Windows 7 still feels peppy and snappy.  
+
+Indeed, I'm almost certain it's the OS, because I use that Windows 8 laptop to run Linux in Virtualbox in order to do development. Linux running *as a guest,* in an *emulated virtual machine* on top of Windows 8 does these same things - opening windows, renaming files, moving files, etc. faster. And I'm talking about XWindows stuff using Gnome, KDE, or XFCE - I'm not talking about the command line stuff. 
+
+I have no idea what's going on, but I may end up reformatting this hard drive before too long and downgrading to Windows 7. 
+
+Oh, also, I've been using Windows 8 on this computer for a year, and only NOW did I figure out that the little arrow next to the "Help" button in Explorer brings up an entire ribbon menu where you can reach helpful commands like showing file extensions. Thanks, Microsoft. You actually did something that improved on Windows 7, then you hid it behind something crazy obscure so as to ensure that nobody can actually find it. 
+
+I don't actually hold out good hopes for Windows 10 - it's basically Windows 8 with the start menu back.  The problems with Windows 8 go far beyond Metro... and it's time for Microsoft to ditch the NT kernel and go with something else.  Maybe something Unix based.  You know, so that we can develop on it. 

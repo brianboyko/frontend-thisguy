@@ -1,5 +1,4 @@
-/* homepage.scss */
-
+/* homepage.css */
 
 .headerholder{
 	float:left;
@@ -30,7 +29,7 @@
 }
 
 .section-1, .section-2, .section-3, .section-4{
-	font-size: 2em;
+	font-size: 2vw;
 	font-weight: 400;
 	padding: 10px;
 
@@ -261,7 +260,7 @@ box-shadow: 0px 0px 18px -6px rgba(0,0,0,0.72);
     	width:100%;
     	float:clear;
     	margin:10px;
-    	font-size: 2em;
+    	font-size: 3vw;
     	padding:0px;
     			max-width: 100%;
     }
@@ -295,6 +294,9 @@ box-shadow: 0px 0px 18px -6px rgba(0,0,0,0.72);
     .widget{
     	font-size: 20px;
     	margin-top: calc(400px - 109px);
+    }
+    .section-4{
+    	font-size: 25px;
     }
 
 

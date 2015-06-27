@@ -9,13 +9,18 @@
 		<form method="get" action="{{site.url}}{{site.baseurl}}/donate.html"><button class="widget hvr-border-fade" href="{{site.url}}{{site.baseurl}}/donate.html">Click Here to Donate</button></form>
 		      	</div>
 </div>
-<div class="barcontainer">{% include progress.html %}</div>
-<div class="blogcontainer"><a href="{{site.baseurl}}/blog.html">Latest Blog Posts</A>:
+<div class="barandvideo">
+<div class="barcontainer">{% include progress.html %}
+<A href="{{site.baseurl}}/blog.html">Latest Blog Posts
+</A>:
 <ul>
-{% for post in site.posts limit:3%}
+{% for post in site.posts limit:4 %}
     <li>
       <a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%b %-d, %Y" }} </li>
   {% endfor %}</ul></div>
+<div class="videocontainer">{% include videoembed.html %}</div>
+</div>
+
 
 	<div style="clear: both;"></div>
 			<HR />

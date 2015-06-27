@@ -35,7 +35,7 @@ function disableDonateButton()
 
 function enableDonateButton()
 {
-  $('#paybtn').html('Donate');
+  $('#paybtn').html('Thank You!');
   $('#paybtn').removeClass('disabled');
 }
 

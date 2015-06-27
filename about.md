@@ -23,25 +23,23 @@ stylesheet: page.css
 > "Nobody has ever figured out a new way of doing things by doing things the way that everyone else was doing them... There are always people who try and look at it from a different angle... Inevitably the people who are asking different questions are at the forefront of innovation in every field." 
 > <BR> - [Adam Savage, in Brian's first documentary, Makers, 2007.](https://vimeo.com/766987)
 
-For the past ten years, I've been a marketing copywriter. Mostly for tech companies in the Austin, TX area. In 2005, I graduated with an M.A. in Journalism.
+For the past ten years, I've been a marketing copywriter. Mostly for tech companies in the Austin, TX area. In 2005, I graduated with an M.A. in Journalism from the University of Texas.
 
-In school, I focused on the impact that the Internet was having on journalism and personal communication. Because of that, I was able to land a job at NetQoS where I helped that company not only produce a blog that brought in clients but also produced some very compelling reports. 
+In school, I focused on the impact that the Internet was having on journalism and personal communication. Because of that, I was able to land a job at [NetQoS](https://en.wikipedia.org/wiki/NetQoS) where I helped that company not only produce a [blog](http://redmonk.com/cote/2009/09/14/ca-buys-netqos-quick-analysis/) that brought in clients but also produced some very compelling journalistic and informative reports. 
 
 <span style="font-size:150%;">I [helped get an innocent woman a new trial](http://www.whatthetech.com/2007/01/22/forensic-examiner-talks-about-julie-amero-case/) through my work, I've gotten to have conversations with Vint Cerf and Adam Savage, and I helped Austin rally to [oppose broadband data caps](https://www.youtube.com/watch?v=uyuIiG4c4Go) when the idea was floated by Time Warner.</span>
 
-
-
-But as the years have gone by, I've become, in some ways, a victim of my success. The Web of 2015 is very different from the web of 2005; and while I have a lot of skill and experience as a writer, content creation has become commoditized. It's time to change careers. 
+But as the years have gone by, I've become, in some ways, a victim of my success. The Web of 2015 is very different from the web of 2005; and while I have a lot of skill and experience as a writer, [content creation has become commoditized](https://written.com/) and [social media skill is no longer as valuable](http://ittybiz.com/how-we-killed-social-media/). No one wants to hire an experienced content marketer when they can get an inexperienced one to do it on the cheap. It's time to change careers. 
 
 ---
 
 ## Why code camp? 
 
-I’d like to become a full-time software developer, and in order to do this, I’d like to attend a coding bootcamp. It is not that I couldn't teach myself programming on my own - I could, given a year. 
+I’d like to become a full-time software developer, and in order to do this, I’d like to attend a [coding bootcamp](http://www.npr.org/sections/ed/2014/12/20/370954988/twelve-weeks-to-a-six-figure-job). It is not that I couldn't teach myself programming on my own - I could, given a year. 
 
-The problem is that since I'm switching careers, I need to know the latest professional tools and make the contacts I need to get started as a junior developers. It's not just the knowledge - it's the jump-start to the career that these schools can bring. 
+The problem is that since I'm switching careers, I need to know the latest professional tools and make the contacts I need to get started as a junior developer. It's not just the knowledge - it's the jump-start to the career that these schools can bring. 
 
-And one of the reasons I’d like to become a developer is so that I can continue something I’ve already started: fighting against institutional corruption in Congress with Mayday.US, the New Hampshire Rebellion, the Rootstrikers and other pro-reform groups. 
+And one of the reasons I’d like to become a developer is so that I can continue something I’ve already started: fighting against institutional corruption in Congress with [Mayday.US](http://mayday.us/), the [New Hampshire Rebellion](http://nhrebellion.org/), the [Rootstrikers](http://www.rootstrikers.org/) and other pro-reform groups. 
 
 ---
 

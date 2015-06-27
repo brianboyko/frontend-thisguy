@@ -35,13 +35,19 @@ stylesheet: projects.css
 
 ![Project-Thisguy](images/project_thisguy.png)
 
-This site was a conglomeration of a number of different technologies. First, there's the look and feel of the site itself.  It uses Jekyll as an HTML preprocessor, which allows me to focus on content without having to repeat myself constantly. Originally, this was hosted on GitHub Pages during development, but eventually the site's front end and back-end were moved to Heroku in order to enable SSL processing of credit cards. 
+First, there's the look and feel of the site itself, which was hand-coded in [Sass](http://sass-lang.com/) and [CSS](http://www.w3.org/Style/CSS/Overview.en.html).  It uses [Jekyll](http://jekyllrb.com/), which allows me to focus on content without having to repeat HTML code constantly, and automatically translates [markdown](http://daringfireball.net/projects/markdown/syntax) into HTML. Originally, this was hosted on [GitHub Pages](https://pages.github.com/) during development, but eventually the site's front end was moved to [Heroku](https://dashboard.heroku.com/) in order to enable SSL, through [Cloudflare](https://www.cloudflare.com/). 
 
-Credit card payments are handled by Stripe, which required some doing.  While Stripe makes things relatively simple on the front end, in order to create buttons varying the amount charged, I needed to run a Ruby-based application on the backend.  A bit of Javascript on the front end allowed me to create the buttons with dollar amounts (primarily for the convenience of mobile users). 
+While it would have been much simpler to use an existing crowdfunding infrastructure, such as GoFundMe.com, the ~5% markup they charge meant that it was worth it to build my own infrastructure instead. To do this, I use [Stripe](https://stripe.com/) to handle credit card payments, [adapting from this code](https://github.com/thoughtpolice/heroku-stripe-donate) from Github user "Thoughtpolice". The original code only allowed for a single text-entry field for donations, which would have been cumbersome on mobile, so I added buttons for different amounts, which use [Javascript](http://www.w3schools.com/js/) to pre-populate that field. (I thought about enabling one-button donation, but I feel that users should be able to visually verify the amount they donate before pressing the checkout button.) 
 
-One feature that was quite a puzzler was getting the progress bar working correctly.  In order to do this, I would have to store the amount and number of users somewhere - eventually, I ran a PostgresSQL database on the same server as the backend payment processing, which stores *only* e-mail addresses and amounts. (This was done by inserting some code that reaches the database using the 'pg' ruby gem.)  Each time the amount changes (i.e., whenever a payment is processed) the site also generates a .json file that the back-end server serves via Sinatra, which the front-end then takes and runs with to get the correct amount for the progress bar.  It's a bit of a kludge - I'd rather grab the data directly via the database, but this way no one with access to the front-end code has access to the sensitive back-end data.  
+The solution Stripe uses allows me to collect credit card payments without collecting credit card data. Your credit card information goes directly to Stripe and is not stored anywhere on our servers.  
 
-Other things were just simple HTML and CSS, such as the floating social media icons you see in the upper right hand corner - for that I just used the pregenerated CSS animations on the hover.css project. 
+One feature that was quite a puzzler was getting the progress bar working correctly. In order to do this, I would have to store the amount and number of users somewhere - eventually, I ran a [PostgreSQL database](http://www.postgresql.org/) on the same server as the backend payment processing. There I store *only* e-mail addresses and amounts, by including the [PG ruby gem](https://rubygems.org/gems/pg/versions/0.18.2) into ThoughtPolice's code, and making a query into the database which stores a new line of data. 
+
+Additionally, each time the amount changes (i.e., whenever a payment is processed) the site also generates a [.json file](http://json.org/) that the back-end server serves via [Sinatra](http://www.sinatrarb.com/), The front-end then takes that data via a [Javascript XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest) to get the correct amount for the progress bar. 
+
+While it might have been possible to grab the data directly from the database, using JSON in this way limits the amount of information the front end can access from the database, and makes that access read-only, keeping the two servers seperated. 
+
+The rest was just HTML and CSS, such as the floating social media icons you see in the upper right hand corner - for that I just used the pregenerated CSS animations on the [Hover.css project](http://ianlunn.github.io/Hover/). 
 
 * Serve a good looking (or good-enough looking) front-end for a "crowdfunding site"
 * Integrate with Stripe and take payments
@@ -82,7 +88,7 @@ As it currently stands, it is feature incomplete, although I have learned quite 
 * Find the best possible 5 card poker hand out of a seven-card spread.
 * Compare two holdem hands, deal a random board, and determine a winner. 
 
-Naturally, I have a long way to go and I put it on hold for other things, but eventually, I hope to have the program feature complete.  
+Naturally, I have a long way to go and I put it on hold for other things, but eventually, I hope to have the program feature complete.  I'm also not sure my algorithm is efficient enough to run solely in client-side Javascript code, as evaluating the probabilities of one hand against each other exactly would require generating (47!-42!), or 2.58 x 10<sup>59</sup> permutations of cards. Instead, I'm considering using [Monte Carlo simulations](https://en.wikipedia.org/wiki/Monte_Carlo_method) instead, with a sample size of 100,000 to start.  Even then that may tax the browser so the whole thing might have to be rewritten to take advantage of Node.JS or even built as a C++ program that generates an output that can be read by the front-end using Javascript.  
 
 You can view the code at [Github](https://github.com/brianboyko/shuffler).
 
@@ -103,9 +109,9 @@ You can view the code at [Github](https://github.com/brianboyko/shuffler).
 
 ![Mayday PAC](images/mayday.png)
 
-More details of this story can be found on the About Page, but the first version of this site was built on WordPress, and used Stripe for payment processing. This site, I build alone. 
+More details of this story can be found on the [About Page](../about.html), but the first version of this site was built on [WordPress](https://wordpress.com/), and used Stripe for payment processing. 
 
-Eventually, with a team of more experienced developers at the helm, the site was moved to a GitHub Pages based front-end and a Google App Engine backend for payments. Wordpress was ditched for static sites using Jekyll to solve the load problem we had from day one.  
+Eventually, with a team of more experienced developers at the helm, the site was moved to a GitHub Pages based front-end and a [Google App Engine](https://cloud.google.com/appengine/docs) backend for payments. Wordpress was ditched for static sites using Jekyll to solve the load problem we had from day one.  
 
 {% endcapture %}
 
