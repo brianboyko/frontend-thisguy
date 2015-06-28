@@ -37,6 +37,7 @@ function enableDonateButton()
 {
   $('#paybtn').html('Thank You!');
   $('#paybtn').removeClass('disabled');
+  $("#social-shares-after-payment").css("display", "inline");
 }
 
 function validateAmnt()
