@@ -1,0 +1,20 @@
+---
+layout: page
+title: Full Blog Archives
+omit_title_suffix: true
+cssid: blog
+nav_order: 0
+stylesheet: page.css
+---
+
+<a href="{{site.url}}/feed.xml"><img style="float:right;" src="{{site.url}}/images/big_subscribe.png" /></a>
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%b %-d, %Y" }} 
+  {% endfor %}
+</ul>
+
+
+
