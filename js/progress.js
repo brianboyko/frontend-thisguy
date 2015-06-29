@@ -1,5 +1,5 @@
 var xmlhttp = new XMLHttpRequest();
-var donationsUrl = "https://thisguy-donation.herokuapp.com/count_serve.json";
+var donationsUrl = "https://thisguy-donation.herokuapp.com/backup.json";
 
 xmlhttp.onreadystatechange = function() {
     if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
