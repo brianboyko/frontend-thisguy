@@ -11,6 +11,8 @@ I'm mostly a lurker on Imgur, though I was there from its beginnings as a humble
 
 I'm also not a fan of promoted content.  I mean, it was *annoying* when it was just those stupid ads for Ted 2; but the ads for the Scream TV show are tasteless.  I really don't want to see them. 
 
+Don't get me wrong - Imgur can run ads if it wants, but when it disrupts the user "flow" - when advertising masquerades as content - that's what I have a problem with.  
+
 Imgur succeeds because it shows you the content vetted by other members of the community.  When stuff comes up that hasn't been vetted by members of the community - when you can "jump the queue" by spending money, you're going to get crap. Because, if it wasn't crap, they wouldn't have to pay for it.  
 
 There's a right way and a wrong way to do viral marketing - MTV's doing it the wrong way - and imgur is helping them do it the wrong way.  
