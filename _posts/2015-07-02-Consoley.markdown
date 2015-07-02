@@ -1,0 +1,34 @@
+---
+layout: post
+title: Consoley and Psychology
+date:  2015-07-02 14:05:25
+categories: debian projects
+stylesheet: page.css
+author: Brian Boyko
+---
+
+Another project I'm working on is "Consoley". I've had to put together more than a few Linux virtual machines to get a development environment up and running. I love apt-get, but sometimes it's hard to remember all the commands. What I really should have done is put together a small shellscript of all the comands I needed to run on a new machine and just run it. 
+
+Then I got to thinking: What if I made this accessible to people who didn't know how to run a shell script? Essentially, creating a site that's as easy for novices to use as [Ninite](https://ninite.com/). All it would be is putting together a few strings - I can do strings. 
+
+I'm working on it now, my big stumbling block being how to store the data from a JSON document into a format I can use. Then it's a matter of dynamically generating the site. 
+
+I *could* do this all manually in HTML, but the point of being a programmer is NOT having to copy and paste something 100 times when a for loop will do. 
+
+Anyway, Consoley is going to be a program which lists a bunch of packages - not all of them, but the kind of packages that a new Linux user would look for - and produces a small shell script they can copy and paste right into any terminal window to install the files. 
+
+For packages on apt-get, that's relatively simple, but I want to eventually include packages such as Skype and Steam, which have no packages in apt-get. Complicating this are the programs that are available out of the box for Ubuntu or Linux Mint but not in Debian, like "mozilla-firefox" and "mozilla-thunderbird" - programs which are served by Iceweasel and Icedove. And again, there are differences between 32-bit and 64-bit editions. (Basically, forks which are are more "purely" FLOSS.) I'll probably institute a dropdown where you can choose your distribution, and adjust the results accordingly. 
+
+---
+
+This has got me thinking, of course, about why I fight so hard for reform. Larry (you know him as @lessig) [sent out a tweet](https://twitter.com/lessig/status/616277908412309504) which not only helped me bring in more traffic, but also called me "The most devoted reformer I know." This is a HUGE compliment. But considering that Larry Lessig is "the Godfather" of the campaign finance reform movement, it also worries me. I mean, if I am the most devoted reformer Larry knows, then why? Don't get me wrong, it's a good thing, I just have to be a little introspective and understand why I do what I do. Why am I the most devoted reformer, rather than the most devoted juggler? Most devoted baker?
+
+I think the reason might be psychological. Specifically, with my dad. My relationship with my dad is very weird - we like very few of the same things. What he was to DIY handiwork, I was to computers. He likes action movies, I prefer comedies. He loves to target-shoot, I can't stand loud noises. I try to stay on the cutting edge of technology - he prefers his old Windows 98 computer and floppy disks, (although Mom eventually got him to go with USB drives). He plays chess, I play poker. We have almost nothing in common. Except we're both brilliant. But we're brilliant in completely different ways, and the things he's brilliant at are incomprehensible to me, and vice versa. 
+
+Which means that for the most part, whenever Dad and I can find something in common, I've tended to latch onto it. There was a time in my life when I was huge into [professional wrestling](https://www.youtube.com/watch?v=p7Q4EVpIFIk). Not just because it was a darker period in my life when I needed some simple fantasy escape, but also because Dad and I could talk about it in depth. 
+
+The funny thing is that's also what got me interested in politics in the first place. As a little kid - maybe 12, 13? - I knew politics were making Dad unhappy. Perhaps somewhere in the Freudian depths of my mind, I thought that I'd make Dad happy by fixing politics. 
+
+Maybe that's still why I'm doing it. Ultimately, somewhere, deep down, I'm trying to change the system to one that works simply because at the end of the day it's something that I can relate to my father on. That I can say: "Look, I did this!" And not have to explain what a "Slashdot" is, or what a "Digg" is in my marketing past, or explain what a "function" is or a "JSON" is in my development future. Maybe that's why I fight so hard. 
+
+Or maybe it's just cause, like all programmers at their core, when I see something wrong with a program I'm forced to use, I want to make a better one. 
